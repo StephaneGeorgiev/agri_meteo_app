@@ -74,7 +74,7 @@ function getWeatherData() {
           maxWidth: 400,
         })
           .setLatLng([43.13, 25.7])
-          .setContent(`<a href="/additional/info.html">More information</a>`);
+          .setContent(`<a href="https://stephanegeorgiev.github.io/weatherappAd/additional/info.html">More information</a>`);
 
         const circle = L.circle([43.13, 25.7], {
           color: "red",
