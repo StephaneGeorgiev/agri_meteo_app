@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="info.css" />
+    <title>More info</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">WEATHER APP </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#">More info</a>
+          </li>
+          <li><a class="main-nav-link" href="#">Contacts</a></li>
+          <li>
+            <a class="main-nav-link" href="/main/index.html">Back</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="chartBox">
+        <canvas id="myChartSevenDays" width="600" height="100"></canvas>
+        <button class="btn" onclick="updateChart()">
+          Get 7 days rain forecast!
+        </button>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+    <script src="info.js"></script>
+  </body>
+</html>
