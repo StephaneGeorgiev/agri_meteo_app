@@ -90,7 +90,7 @@ function getWeatherData() {
         <div>Expected rain for the next hour: ${
           rainSF ? rainSF + "mm" : "none"
         } </div>
-        <a href="/additional/info.html">More indormation</a>
+        <a href="https://stephanegeorgiev.github.io/weatherappAd/additional/info.html">More indormation</a>
     </div>`);
 
             /* popUps settings SOFIA*/
@@ -103,7 +103,7 @@ function getWeatherData() {
         <div>Expected rain for the next hour: ${
           rain ? rain + "mm" : "none"
         } </div>
-        <a href="/additional/info.html">More indormation</a>
+        <a href="https://stephanegeorgiev.github.io/weatherappAd/additional/info.html">More indormation</a>
     </div>`);
 
             /* icons settings*/
