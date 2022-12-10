@@ -132,7 +132,7 @@ markers.forEach((mr) =>
             </p>
            <a
              class="more-info"
-             href="https://stephanegeorgiev.github.io/weatherappAd/additional/info.html"
+             href="#"
              >More indormation</a
            >
          </div>`;
@@ -157,7 +157,7 @@ map.on("mousemove", function (e) {
 });
 
 const provincesGeoJSON = false;
-fetch("/provinces.json", {
+fetch("./provinces.json", {
   method: "GET",
 })
   .then((response) => response.json())
