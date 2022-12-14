@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <title>Weather Agriculture App</title>
+  </head>
+  <body>
+    <div class="slide-in">
+      <h2>Weather information</h2>
+
+      <div class="info">
+        <p class="temp">Temperature is &deg;</p>
+        <p class="pressure">Pressure: hPa</p>
+        <p class="humidity">Humidity: %</p>
+        <p class="wind-deg">Wind direction: &deg;</p>
+        <p class="wind-speed">Wind speed: ;</p>
+        <p>Expected rain for the next hour:</p>
+        <div class="icon-container">
+          <img
+            src="http://openweathermap.org/img/wn/${icon}@2x.png"
+            alt="weather icon"
+            class="w-icon"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="map"></div>
+
+      <div class="future-forecast">
+        <div class="weather-forecast" id="weather-forecast">
+          <div class="weather-forecast-item">
+            <div class="day">Day 1</div>
+
+            <div class="pop0">Probability for rain %</div>
+            <div class="temp0D">Day Temp&#176; C</div>
+            <div class="rain0">Rain</div>
+          </div>
+
+          <div class="weather-forecast-item">
+            <div class="day">Day 2</div>
+
+            <div class="pop1">Probability for rain %</div>
+            <div class="temp1D">Day Temp&#176; C</div>
+            <div class="rain1">Rain</div>
+          </div>
+
+          <div class="weather-forecast-item">
+            <div class="day">Day 3</div>
+
+            <div class="pop2">Probability for rain %</div>
+            <div class="temp2D">Day - 35.6&#176; C</div>
+            <div class="rain2">Rain - 35.6&#176; C</div>
+          </div>
+
+          <div class="weather-forecast-item">
+            <div class="day">Day 4</div>
+
+            <div class="pop3">Probability for rain %</div>
+            <div class="temp3D">Day - 35.6&#176; C</div>
+            <div class="rain3">Rain - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Day 5</div>
+
+            <div class="pop4">Probability for rain %</div>
+            <div class="temp4D">Day - 35.6&#176; C</div>
+            <div class="rain4">Rain - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Day 6</div>
+
+            <div class="pop5">Probability for rain %</div>
+            <div class="temp5D">Day - 35.6&#176; C</div>
+            <div class="rain5">Rain - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Day 7</div>
+
+            <div class="pop6">Probability for rain %</div>
+            <div class="temp6D">Day - 35.6&#176; C</div>
+            <div class="rain6">Rain - 35.6&#176; C</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chartBox">
+        <canvas id="myChartSevenDays"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  </body>
+</html>
